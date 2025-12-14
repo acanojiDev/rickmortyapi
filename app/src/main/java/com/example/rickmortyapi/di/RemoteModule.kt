@@ -1,6 +1,7 @@
 package com.example.rickmortyapi.di
 
 import com.example.rickmortyapi.data.remote.PersonajeApi
+import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import kotlinx.coroutines.CoroutineScope
@@ -11,6 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 import dagger.hilt.components.SingletonComponent
 
+@Module
 @InstallIn(SingletonComponent::class)
 class RemoteModule {
     @Provides

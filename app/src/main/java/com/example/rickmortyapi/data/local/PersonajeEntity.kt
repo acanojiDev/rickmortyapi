@@ -1,5 +1,9 @@
 package com.example.rickmortyapi.data.local
 
+import androidx.room.Entity
+import com.example.rickmortyapi.data.model.Personaje
+import androidx.room.PrimaryKey
+
 /*
 Define como se ve un personaje guarado en la BD local,
 para que Room sepa que columnas crear en la tabla
