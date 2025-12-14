@@ -11,7 +11,9 @@ import androidx.navigation.NavGraph
 import androidx.navigation.compose.rememberNavController
 import com.example.rickmortyapi.theme.RickmortyapiTheme
 import com.example.rickmortyapi.ui.navigation.NavGraph
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

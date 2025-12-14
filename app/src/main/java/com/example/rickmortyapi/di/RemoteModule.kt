@@ -19,7 +19,7 @@ class RemoteModule {
     @Singleton
     fun providePersonajeApi(): PersonajeApi {
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://rickandmortyapi.com/api")
+            .baseUrl("https://rickandmortyapi.com/api/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         return retrofit.create(PersonajeApi::class.java)

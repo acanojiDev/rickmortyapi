@@ -9,13 +9,13 @@ import retrofit2.http.Query
 
 
 interface PersonajeApi{
-    @GET("api/character/")
+    @GET("character/")
     suspend fun getPersonajeList(
         @Query("limit") limit: Int = 20,
         @Query("offset") offset: Int = 0
     ): Response<PersonajeListRemote>
 
-    @GET("api/character/{id]}")
+    @GET("character/{id}")
     suspend fun getPersonajeDetail(
         @Path("id") id: Long
     ): Response<PersonajeRemote>

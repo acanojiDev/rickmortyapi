@@ -1,6 +1,5 @@
 package com.example.rickmortyapi.ui.personajeList
 
-import android.app.Person
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -44,7 +43,7 @@ fun PersonajeListScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Personaje") },
+                title = { Text("Personajes") },
                 actions = {
                     if (uiState.isSyncing) {
                         CircularProgressIndicator(

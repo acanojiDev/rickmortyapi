@@ -5,6 +5,7 @@ data class PersonajeListRemote(
 )
 
 data class PersonajeListItemRemote(
+    val id: Long,
     val name: String,
     val image: String
 )

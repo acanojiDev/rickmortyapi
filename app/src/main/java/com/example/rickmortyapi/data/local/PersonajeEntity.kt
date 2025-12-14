@@ -35,9 +35,9 @@ fun PersonajeEntity.toModel(): Personaje {
     return Personaje(
         id = this.id,
         name = this.name,
-        gender = this.gender,
-        status = this.status,
-        imageUrl = this.imageUrl
+        gender = this.gender ?: "",
+        status = this.status ?: "",
+        imageUrl = this.imageUrl?:""
     )
 }
 

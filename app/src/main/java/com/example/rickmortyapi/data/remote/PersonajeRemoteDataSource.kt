@@ -11,10 +11,10 @@ import javax.inject.Inject
 
 class PersonajeRemoteDataSource @Inject constructor(
     private val personajeApi: PersonajeApi,
-    @ApplicationScope private val scope: CoroutineScope
+    private val scope: CoroutineScope
 ) : PersonajeDataSource {
 
-    override suspend fun addAll(pokemonList: List<Personaje>) {
+    override suspend fun addAll(personajeList: List<Personaje>) {
         // No implementado para remoto
     }
 
@@ -48,8 +48,8 @@ class PersonajeRemoteDataSource @Inject constructor(
                                     Personaje(
                                         id = detail.id,
                                         name = detail.name,
-                                        gender = detail.gender,
-                                        status = detail.status,
+                                        gender = "",
+                                        status = "",
                                         imageUrl = detail.image
                                     )
                                 )
